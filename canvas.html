@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      /* overflow: hidden; */
+    }
+    </style>
+</head>
+<body>
+   <canvas></canvas> 
+   <img src="i.jpg">
+<script>
+  ///camera class 1
+// let canvas=document.querySelector("canvas")
+// canvas.width = window.innerWidth
+// canvas.height = window.innerHeight
+// let tool = canvas.getContext("2d")
+// tool.moveTo(0,0)
+// tool.lineTo(400,400)
+// tool.strokeStyle="red"
+// tool.stroke()
+// // tool.beginPath()
+// // tool.moveTo(400,400)
+// tool.lineTo(800,0)
+// tool.strokeStyle="blue"
+// // tool.lineWidth=100
+// tool.stroke()
+// tool.moveTo(0,0)
+// tool.fillStyle="red"
+ //box banega
+// tool.fillRect(100,100,200,200)
+
+////camera class 2
+let canvas=document.querySelector("canvas")
+let img =document.querySelector("img")
+canvas.width=window.innerWidth
+canvas.height=window.innerHeight
+let tool = canvas.getContext("2d")
+img.addEventListener("load",function(){
+tool.drawImage(img,3,2)
+})
+</script>
+</body>
+</html>

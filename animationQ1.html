@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+div{
+    height: 10rem;
+    width: 10rem;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: calc((100vh - 10rem)/2);
+    animation: q1 4s infinite;
+}
+@keyframes q1{
+    0%{
+        transform: scale(1);
+        border-radius: 0;
+    }
+    50%{
+        transform: scale(2);
+        border-radius: 50%;
+    }
+    0%{
+        transform: scale(1);
+        border-radius: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
